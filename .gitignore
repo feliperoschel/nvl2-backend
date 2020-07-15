@@ -2,7 +2,6 @@ node_modules/
 .vscode/
 build/
 temp/
-
 tmp/*
 !tmp/.gitkeep
 src/config/auth.ts
