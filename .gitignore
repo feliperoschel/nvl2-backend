@@ -1,7 +1,7 @@
 node_modules/
 .vscode/
 build/
-config/auth.ts
+src/config/auth.ts
 temp/
 
 tmp/*
