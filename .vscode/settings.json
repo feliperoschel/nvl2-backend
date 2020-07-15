@@ -4,5 +4,8 @@
     "gostack",
     "gostack gobarber",
     "postgres"
+  ],
+  "cSpell.ignoreWords": [
+    "originalname"
   ]
 }
