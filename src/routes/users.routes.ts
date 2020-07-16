@@ -34,7 +34,7 @@ usersRouter.patch(
 
     const user = await updateUserService.execute({
       user_id: request.user.id,
-      avatarFilename: request.file.filename,
+      avatarFileName: request.file.filename,
     });
 
     delete user.password;

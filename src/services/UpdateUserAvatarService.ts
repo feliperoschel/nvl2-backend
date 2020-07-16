@@ -9,11 +9,11 @@ import User from '../models/User';
 
 interface Request {
   user_id: string;
-  avatarFilename: string;
+  avatarFileName: string;
 }
 
 class UpdateUserAvatarService {
-  public async execute({ user_id, avatarFilename }: Request): Promise<User> {
+  public async execute({ user_id, avatarFileName }: Request): Promise<User> {
     const usersRepository = getRepository(User);
 
     const user = await usersRepository.findOne(user_id);
@@ -31,7 +31,7 @@ class UpdateUserAvatarService {
       }
     }
 
-    user.avatar = avatarFilename;
+    user.avatar = avatarFileName;
 
     await usersRepository.save(user);
 
